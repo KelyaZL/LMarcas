@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" type="image/png" href="https://www.ymant.com/blog/wp-content/uploads/2017/09/REDES-YMANT.jpg"> <!--Favicon=Icono de pestaña-->
+<body background="fondo.jpg"></body> <!--Para poner fondo de pantalla-->
+<title>Medios físicos de señal</title>
+
+<style>
+
+body {
+background-image: url(https://c.wallhere.com/photos/4c/d8/3840x2160_px_black_background_bokeh_Optic_Fiber_technology_Wires-1204508.jpg!d);
+background-position: center center;	  
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+h2, p, th, td, tr { /*Para alinearlos al centro*/
+text-align: center;
+}
+table, th, td {
+border: 1px solid black; /*Color de la tabla*/
+border-collapse: collapse; /*Para que no se vean recuadros entre los contenidos y la tabla donde están metidos.*/
+background-color: #3183c7; /*Para dar color a las tablas*/
+width: 800px; /*Para que tenga tamaño fijo aunque cambie el ancho de la pág*/
+}
+th, td {
+padding: 5px; /*Espaciado entre el cuadrado y contenido*/
+}
+a {
+color: #000; /*Para que los enlaces no sean de otro color*/
+text-decoration:none; /*para quitar el subrayado de los enlaces*/
+}
+</style>
+</head>
+<body>
+<h2><font face="arial"size="12" color="blue">Medios físicos de la transmisión</font></h2>
+<p style="font-size:large"><span style="background-color:rgba(176, 224, 230, 0.397)">El medio de transmisión es el soporte físico, a través del cual se puede crear una comunicación entre emisor y receptor en un sistema de transmisión de datos.
+    Los medios pueden ser guiados o no, esto es cableado o inalámbrico, en ambos casos la transmisión va por ondas electromagnéticas.
+    Los medios guiados conducen las ondas por el cable, sin embargo los medios no guiados son un soporte para que las ondas se transmitan pero no las dirigen, transmiten por el aire.
+    El medio determina las características y calidad de transmisión. Y en los no guiados la velocidad se determina más por la frecuencia a la que emite.
+</span></p>
+
+<table style="width:80%" align="center"><!--Para que coja el 80% del ancho de la pantalla-->
+<tr>
+<th style="width:10%">Índice</th>
+<th style="width:45%">Medio</th> 
+<th style="width:45%">Explicación</th>
+</tr>
+<tr>
+<td rowspan="7" valign="top"> <!--Para que junte las filas-->
+<ul> <!--Para que deje margen-->
+<b style="font-family:courier;">Cable</b>
+<li><a href="#Coaxial">Coaxial</a></li><!--Para que vaya a ese cacho de página-->
+<li><a href="#Cable">Cable paralelo</a></li>
+<li><a href="#Trenzado">Par trenzado</a></li>
+<ul>
+<li><small>UTP</small></li>
+<li><small>STP</small></li>
+<li><small>SSTP</small></li>
+<li><small>SFTP</small></li>
+</ul>
+<li><a href="#Fibra">Fibra Óptica</a></li>
+<ul>
+<li style="font-size:80%;">Monomodo</li>
+<li style="font-size:80%;">Multimodo</li>
+</ul>
+<br> <!--Para dejar espacio-->
+<b style="font-family:courier;">Inalámbrico</b>
+<li><a href="#Radio">Radio</a></li>
+<li><a href="#Microondas">Microondas</a></li>
+<ul>
+<li><a href="#Wifi">Wi-Fi</a></li>
+<li><a href="#Bluetooth">Bluetooth</a></li>
+</ul>
+<li><a href="#Infrarrojas">Infrarrojas</a></li>
+</ul></td>
+
+<td id=Coaxial>Coaxial<br>
+<img src="https://media.rs-online.com/t_large/R0822901-01.jpg" width="30%"></td>
+<td>Este cable tiene mejor blindaje que el par trenzado, asique tiene mayor velocidad y puede abarcar mayores distancias. Es un alambre de cable duro que se encuentra rodeado de un material aislante, que a la vez esta cubierto por una malla de cobre trenzado y externamente una capa de plástico protector. Esto permite mayor ancho de banda y excelente inmunidad al ruido. Existen dos tipos: De banda base, para transmisión digital y De banda ancha, para transmisión analógica.</td>
+</tr>
+<tr>
+<td id=Cable>Cable paralelo<br>
+<img src="https://3.bp.blogspot.com/--_8MfjADRwk/WC7nrU2AHuI/AAAAAAAAAIA/3lIgKLBRRX4sdYdgJ1902yhE_RjaL_RTgCLcB/s1600/s90conn_cable1_1_1.jpg" width="30%">
+</td>
+<td>Este medio de transmisión está formado por dos hilos de cobre paralelos recubiertos de un material aislante (plástico). Este tipo de cableado ofrece muy poca protección ante interferencias. Las conexiones se realizan mediante un conector denominado RJ-11. Es un medio semidúplex ya que la información circula en los dos sentidos por el mismo cable pero no se realiza al mismo tiempo.</td>
+</tr>
+
+<td colspan="2"><table style="width:100%">
+<tr><td colspan="2"><b id=Trenzado>Par trenzado</b><br><p>El cable de par trenzado consiste en grupos de hilos de cobre entrelazados en pares, esto se hace porque la forma entrelazada permite reducir la interferencia eléctrica tanto exterior como de pares cercanos y permite transmitir datos de forma más fiable además de aumentar la distancia. Un cable de par trenzado está formado por un grupo de pares entrelazados, recubiertos por un material aislante. Dependiendo de los pares y los materiales, se distinguen 8 categorias de par trenzado. Cada cable tiene un color asignado y cada uno tiene una función especifica: Transmisión, Recepción o Masa.</p></td></tr> <!--b Para negrita-->
+<tr>
+<td>UTP<br>
+<img src="https://sofiacuraarias.files.wordpress.com/2015/05/utp.jpg" width="30%">
+</td>
+<td>No apantallado, es el más simple de los pares trenzados puesto que no lleva ningún tipo de pantalla conductora, son flexibles pero muy sensibles a interferencias.</td>
+</tr>
+<tr>
+<td>STP<br>
+<img src="https://sites.google.com/site/portafoliokevinavalos/_/rsrc/1320439551573/unidad-tres/cableado-en-redes/2-cable-de-par-trenzado-apantallado-stp-shielded-twisted-pair/20101114201901-stp-12.jpg?height=175&width=400" width="30%">
+</td>
+<td>Son iguales a los anteriores pero llevan recubierto, con una malla protectora, cada par ofreciendo mayor inmunidad al ruido.</td>
+</tr>
+<tr>
+<td>SSTP
+    <br><img src="https://www.profesionalreview.com/wp-content/uploads/2019/01/Cable-SSTP.jpg" width="30%">
+</td>
+<td>Son iguales a los anteriores pero con una pantalla global, que cubre todos los pares. Es el que mayor inmunidad al ruido posee.</td>
+</tr>
+<tr>
+<td>SFTP
+    <br><img src="https://www.surveillance-video.com/media/product/db2/icc-iccabp6fbl-cat6a-650mhz-ftp-cmp-blue-copper-premise-cable-bulk-1000-iccabp6fbl-53e.jpg" width="30%">
+</td>
+<td>Poseen una pantalla conductora global en forma trenzada, es mejor que el UTP para interferencias pero más barato que el STP.</td>
+</tr>
+</table>
+</td>
+
+<tr>
+<td colspan="2"><table style="width:100%">
+<tr><td colspan="2"><b id=Fibra>Fibra Óptica</b><br>
+<img src="https://rollantel.es/wp-content/uploads/2018/11/Screenshot_1.png" width="30%"><p>Se basa en utilizar ondas de luz para transmitir información binaria. Se trata de un cilindro de muy pequeño diámetro, por el que se transmite la luz, que va recubierto de un medio que deje pasar la menos luz posible para mantener todo el az de luz dentro de el. Todo esto cubierto con un revestimiento que protege de cualquier rayo de luz del exterior. <em>Necesita 3 componentes: <br> ·Fuente de luz: Convierte la señal eléctrica en luz. <br> ·Medio de transmisión: Fibra de vidrio de un diametro parecido al de un pelo humano. <br> ·Detector: Genera pulso eléctrico cuando la luz incide sobre él. </em></p></td></tr> <!--Para negrita-->
+<tr>
+<td><i>Monomodo</i></td>
+<td>La luz va en linea recta.</td>
+</tr>
+<tr>
+<td><i>Multimodo</i></td>
+<td>La luz va incidiendo o chocando con su superficie interna por lo cual no tiene pérdidas.</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td id=Radio>Radio<br>
+<img src="http://3.bp.blogspot.com/-bDRoa9urwTQ/ULB4o4EonQI/AAAAAAAAAsU/jp226ghukvw/w1200-h630-p-k-no-nu/radio.gif" width="90%">
+</td>
+<td>
+Las comunicaciones inalámbricas consisten en el envío y recepción de electrones y fotones que circulan por el aire.<br> Las ondas de radio son fáciles de generar, aguantan largas distancias, atraviesan obstaculos y viajan en todas direcciones. Se necesitan permisos del gobierno para que las ondas no se interfieran entre sí. Varias redes pueden utilizar frecuencias distintas.
+</td>
+</tr>
+<tr>
+<td colspan="2"><table style="width:100%">
+<tr><td colspan="2"><b id=Microondas>Microondas</b><p>Permiten transmisiones tanto terrestres como satélites. Con frecuencias entre 1 y 10Ghz y velocidades de 10Mbps y viajan en linea recta; por lo que emisor y receptor deben estar alineados y usar repetidores en largas distancias.</p></td></tr> 
+<tr>
+<td id=Wifi>Wi-Fi<br><iframe src="https://www.youtube.com/embed/301Tx0GN8uM" width="60%"></iframe></td>
+<td>Se usa en redes locales en frecuencias de 2,4 GHz y 5 GHz. Siguen el estándar IEEE 802.11 y depende la letra del estándar utilizado cambia la velocidad de transmisión.</td>
+</tr>
+<tr>
+<td id=Bluetooth>Bluetooth<br><img src="https://i.blogs.es/382f25/bluetooth-logo/1024_2000.jpg" width="100%"></td>
+<td>Bluetooth es una especificación tecnológica para redes inalámbricas que permite la transmisión de voz y datos entre distintos dispositivos mediante una radiofrecuencia segura (2,4 GHz), esto es, crear una red WPAN, personal, sin llegar a abarcar largas distancias.</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td id=Infrarrojas>Infrarrojas<br><img src="https://miracomohacerlo.com/wp-content/uploads/2016/11/25-7.jpg" width="80%"></td>
+<td>Se usan en comunicación a <mark>corto alcance.</mark> No atraviesan objetos sólidos, aunque esto puede hacer que sea más seguro. No se puede usar en exteriores porque el sol afecta a la señal infrarroja. </td>
+</tr>
+<tr style="width:100%">
+        <td colspan=3 ><table>
+      <tr background-color="#3183c7"> <!--Los colores no se ven por la prioridad del CSS sobre HTML pero si no lo tuviera sería así-->
+        <th>Medio</th>
+        <th>Velocidad</th>
+        <th>Longitud</th>
+      </tr>
+      <tr bgcolor="orange">
+        <td>Coaxial</td>
+        <td>2Gbps/10Mbps</td>
+        <td>500m/1500m</td>
+      <tr bgcolor="yellow">  
+        <td>Par trenzado</td>
+        <td>100Mbps</td>
+        <td>100m</td>
+      </tr>  
+      <tr bgcolor="lightgreen">  
+        <td>Fibra Óptica</td>
+        <td>10Gbps</td>
+        <td>100km</td>
+      </tr>  
+      <tr bgcolor="lightblue">  
+        <td>Ondas de radio</td>
+        <td>1Gbps</td>
+        <td>500m/1500m</td>
+      </tr>
+      <tr bgcolor="violet">
+        <td>Microondas</td>
+        <td>10Mbps</td>
+        <td>80km</td>
+      </tr>
+      <tr bgcolor="slateblue">
+          <td>Infrarrojo</td>
+        <td>10Mbps</td>
+        <td>200m</td>
+      </tr>
+      
+    </table></td>
+        
+      </tr>
+    
+</table>
+
+</body>
+</html>
