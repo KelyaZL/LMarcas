@@ -1,0 +1,15 @@
+<!--Para los formularios necesitamos una aplicación (que esté en escucha) que se ejecute en el servidor que valide, o no, la información insertada en el html, que se envia al server que procesa la info y da una respuesta.-->
+
+<h2>HTML Forms</h2>
+
+<form action="echo.php"> <!--Empieza por form--><!--A qué pág que recoja datos--> <!--cambiar /action_page.php por nuestra pag echo.php-->
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><!--3 inputs, diferentes type, si pone text es un input para meter texto, name es una variable y value lo que sale predeterminado-->
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"> <!--Lastname tiene que ser diferente para que el php diferencie los distintos tipos de datos-->
+  <br><br>
+  <input type="submit" value="Submit"> <!--Type submit para hacer un botón-->
+</form> <!--Y acaba en form-->
+
+<!--<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> // Esta pág no existe // Apache tiene php-->
