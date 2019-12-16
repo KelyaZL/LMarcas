@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+<style>
+*{
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+</style>
+</head>
+<body>
+    
+<body>
+
+<!--HTML Forms-->
+<!--Show checkboxes:-->
+<!--Radio button-->
+
+
+<form action="echo.php">
+<b> Cliente: </b><br>
+    <input type="text" name="observaciones"><br>
+    <br>
+
+<b>Pedido Para:</b> <br>
+    <input type="radio" name="Pedido" value="Recoger"> Recoger <br>
+    <input type="radio" name="Pedido" value="Llevar"> Llevar <br>
+    <br>
+
+<b>Haz Tu Pedido: </b><br>
+    <input type="checkbox" name="Pizza" value="Pizza">Pizza <img src="https://www.guadapress.es/fotos/60/PIZZA_HUT_GUADALAJARA_GUADANEWS_thumb_728.jpg" width="70" height="50"> <br>
+    <input type="checkbox" name="Patatas" value="Patatas"> Patatas <img src="https://okdiario.com/img/2019/08/15/receta-de-patatas-cajun-al-microondas-655x368.jpg" width="70" height="50" ><br>
+    <input type="checkbox" name="Bebida" value="Bebida">Bebida <img src="https://i0.wp.com/lasdietasengordan.com/wp-content/uploads/2017/05/Refrescosssss.jpg?fit=1386%2C727" width="70" height="50"><br>
+    <br>
+
+<b>Hora Para Recibirlo:</b>
+<select name="carlist"> 
+    <option value="7:00">7:00</option>
+    <option value="7:30">7:30</option>
+    <option value="8:00">8:00</option>
+</select> <br>
+<br>
+<b>Forma De Pago: </b><br>
+    <input type="radio" name="Pago" value="Efectivo"> Efectivo <br>
+    <input type="radio" name="Pago" value="Tarjeta"> Tarjeta <br>
+<br>
+
+<b>Observaciones:</b> <br>
+<textarea name="observaciones" rows="10" cols="30"></textarea>
+<br>
+<br>
+<!--Botón-->
+<input type="submit" value="Terminar">
+</form>  
+
+</body>
+</html>
