@@ -1,3 +1,6 @@
+<b>Su Pedido:</b><br>
+<br>
+
 <?php
 
 if (isset($_GET["Cliente"]))
