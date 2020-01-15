@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<!--Javascript tiene que estar asociado a un evento (Por ejemplo el clicar un botón)-->
+
+<img id="myImage" src="flor1.jpg" style="width:200px"> <!--La imagen que sale al principio-->
+<br>
+<button id="button0" onclick="document.getElementById('myImage').src='flor1.jpg'">Turn on the light</button> <!--Que myimage cambie a flor1-->
+
+<button onclick="document.getElementById('myImage').src='flor2.jpg'">Turn off the light</button> <!--Para cambiar a flor2-->
+
+<button onclick="document.getElementById('myImage').style.display = 'none'">Disappear</button> <!--Para cambiar a flor2-->
+
+<button onclick="document.getElementById('myImage').style.display = 'block'">Appear</button> <!--Para cambiar a flor2-->
+
+
+<!--Para hacer desaparecer la imagen
+document.getElementById('myImage').style.display = "none"; Para hacerlo aparecer usar CSS
+document.getelementbyid('myimage').style.display = "block";-->
+
+<!--Para que lo haga desde el principio (Sin evento) se mete en el Tag <script> -->
+
+<script>
+    document.getElementById('myImage').style.display = "none";
+</script>
+
+</body>
+</html>
