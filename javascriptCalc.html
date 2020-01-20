@@ -5,15 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+<style>
+.solid {
+    border-style: solid;
+    width: 140px;
+}
+</style>
 </head>
 <body>
     
-    <p class="solid" id="resultado">0</p>
-    <imput type="text" id="numerox"></imput>
-    <imput type="text" id="numeroy"></imput>
+    <p class="solid" id="resultado">0</p><br>
+    <input type="text" id="numerox"></input><br>
+    <input type="text" id="numeroy"></input><br>
     <button type="button" onclick="suma()">+</button>
     <button type="button" onclick="resta()">-</button>
-    <button type="button" onclick="clean()">cls</button>
+    <button type="button" onclick="cls()">cls</button>
 
+<script>
+function suma() {
+    x=document.getElementById("numerox").value;
+    y=document.getElementById("numeroy").value;
+
+    x = parseInt(x);
+    y = parseInt(y);
+
+    document.getElementById("resultado").innerHTML = x + y;
+}
+
+function resta() {
+    x=Number(document.getElementById('numerox').value);
+    y=Number(document.getElementById('numeroy').value);
+
+    document.getElementById('resultado').innerHTML = x - y;
+}
+
+function cls () {
+
+document.getElementById("resultado").innerHTML = 0;
+document.getElementById("numerox").value = "";
+document.getElementById("numeroy").value = "";
+
+}
+
+</script>
 </body>
 </html>
