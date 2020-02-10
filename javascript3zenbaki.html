@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<input type="text" id="x">
+<input type="text" id="y">
+<input type="text" id="z">
+<input type="button" value="sort" onclick="sort_xyz_input()">
+<p id="resultado"></p>
+
+<script>
+/*
+OHARRA: Ariketa hau egin baino lehen
+paperean algoritmoa egin 
+                                            |
+                            --------------(x<=y)-----------
+                            |                              | 
+                      ----(x<=z)----                 ----(y<=z)----
+                      |            |                 |             | 
+               ----(y<=z)----   [z<=x<=y]      ----(x<=z)----  [z<=y<=x]
+               |            |                  |            |
+           [x<=y<=z]    [x<=y<=z]          [y<=x<=z]    [y<=z<=x]
+*/
+
+
+function sort_xyz(x, y, z){
+
+    n1 = 0;
+    n2 = 0;
+    n3 = 0;
+
+    if (x <= y) {
+        if (x <= z) {
+            // x txikiena da
+            if (y <= z) {
+                console.log(x + "<=" + y + "<=" + z);
+                n1=x; n2=y; n3=z;
+            } else {
+                console.log(x + "<=" + z + "<=" + y);
+                n1=x; n2=z; n3=y;
+            }
+        } else {
+            // z txikiena da
+            console.log(z + "<=" + x + "<=" + y);
+            n1=z; n2=x; n3=y;
+        }
+    } else {
+        // y < x
+        if (y <= z) {
+            // y txikiena da
+            if (x <= z) {
+                console.log(y + "<=" + x + "<=" + z);
+                n1=y; n2=x; n3=z;
+            } else {
+                console.log(y + "<=" + z + "<=" + x);
+                n1=y; n2=z; n3=x;
+            }
+        } else {
+            // z txikiena da
+            n1=z; n2=y; n3=x;
+        }
+    }
+
+    console.log(n1 + "<=" + n2 + "<=" + n3);
+    
+    return {x:n1, y:n2, z:n3};
+
+}
+
+function sort_xyz_input() {
+    x = parseInt(document.getElementById("x").value);
+    y = parseInt(document.getElementById("y").value);
+    z = parseInt(document.getElementById("z").value);
+
+    sorted_nums = sort_xyz(x,y,z);
+    console.log(sorted_nums);
+    document.getElementById("resultado").innerHTML = sorted_nums.x+"<="+sorted_nums.y+"<="+sorted_nums.z;  
+}
+
+
+</script>
+
+
+</body>
+</html>
+
+
+<!--
+1!=1
+2!2x1
+3!3x2x1 (6)
+4! 3!x4 (24) (coge el 6 del 3!)
+
+
+s=n1+"<="+n2+"<="+n3;
+return s
+//
+return {x:n1, y:n2, z:n3};
+
+para acceder a elementos internos con .
+ordenado=sort_xyz
+ordenado.x =-3 ordenado.y =0
+al poner ordenado salen los valores x y z PNG
+
+//Como debuguear
+F12-Sources
+Sale el código con numeración
+break ponit es donde para el código, podemos poner uno al clicar sobre el número que se pone azul en la numeración, ejecuta hasta la linea anterior al breakpoint.
+en el icono de play para que ejecute todo normal/ ejecutar esta linea/ usa solo el parseint(coger valor numérico de x (3))/ F10 ejecuta linea x linea /F11 no ejecuta, entra dentro/
+
+Para que ejecute una función hay que definirla arriba del todo (se ejecuta de arriba abajo) porque si lo ponemos abajo, lo de arriba(el html) no sabe donde lo tiene que buscar
+//Si pones un onclick o una caracteristica para que la función se ejecute no pasa nada
+
+turnos para el tres en raya: 
+la prim vez que defines una variable hay que poner var aunk se puede no poner // booleans algebra(von neumann)
+una variable que tendrá dos estados (true false/ 1 0... etc)
+
+var turno = 1 / turno = !turno; (para cambiar el estado)
+
+if (turno == "uno") {
+
+} else {
+
+}
+
+
+-->

@@ -1,0 +1,40 @@
+/*x=3
+if (x==8) {console.log('Es igual')} else {console.log('No es igual')}
+
+y=5
+if (x==y) {console.log('Son iguales')} else {console.log('X no es igual')} */
+
+
+
+if(a==b){
+    if(b==c)
+        console.log('Los tres números son iguales');
+    else if(b>c)
+        console.log('Los dos primeros son iguales y el orden es: ',a,'=',b,'>',c);
+    else
+        console.log('Los dos primeros son iguales y el orden es: ',c,'>',a,'=',b);
+}
+else if(a==c){
+    if(a>b)
+        console.log('El primero y tercero son iguales y el orden es: ',a,'=',c,'>',b);
+    else
+        console.log('El primero y tercero son iguales y el orden es: ',b,'>',a,'=',c);
+}
+else if(b==c){
+    if(b>a)
+        console.log('El segundo y tercero son iguales y el orden es: ',b,'=',c,'>',a);
+    else
+        console.log('El primero y tercero son iguales y el orden es: ',a,'>',b,'=',c);
+}
+else if((a>b)&&(b>c))
+    console.log('El orden es: ',a,'>',b,'>',c);
+else if((a>c)&&(c>b))
+    console.log('El orden es: ',a,'>',c,'>',b);
+else if((b>a)&&(a>c))
+    console.log('El orden es: ',b,'>',a,'>',c);
+else if((b>c)&&(c>a))
+    console.log('El orden es: ',b,'>',c,'>',a);
+else if((c>a)&&(a>b))
+    console.log('El orden es: ',c,'>',a,'>',b);
+else if((c>b)&&(b>a))
+    console.log('El orden es: ',c,'>',b,'>',a);

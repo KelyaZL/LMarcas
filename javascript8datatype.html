@@ -1,0 +1,34 @@
+<script>
+x y x por separado
+en consola
+p1 = {x:5, y:6, z:7}
+
+p1.y //para ver solo el valor de 'y' y poder modificarlo 'p1.y=8'
+
+lista = [1,3,5,6,8]
+lista[0] = "Fernan" // Añadir texto a la lista
+lista
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person.age
+
+function suma(x,y) {return x+y}
+suma (4,6)
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+
+function myFunction() {
+  var carName = "Volvo"; //Visibilidades, solo se ve con la función porque es privada
+
+function myFunction(x) {
+    x=1; //x interna tiene un valor
+}
+
+x = 5 //x externa tiene otro valor
+
+myFunction(6)
+
+</script>
