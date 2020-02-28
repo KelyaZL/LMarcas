@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preguntas</title> <!--Título de la página-->
+<style>
+
+button { /* Características de todos los botones.*/
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.5s; /*Lo que tardan los cambios*/
+  cursor: pointer; /*El cursor sobre el ratón*/
+  background-color: white;
+  border-radius: 8px;  /*La curvatura de los bordes de los botones*/
+  border: 2px solid black; /*Los bordes*/
+}
+
+button:hover{ /*Sombreado de los botones que aparece al pasar el cursor por encima*/
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button1 {
+  background-color: rgb(255, 0, 255); 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button1:hover { /*El botón cambia al pasar el cursor por encima*/
+  background-color: white; 
+}
+
+</style>
+</head>
+<body>
+
+<button class="button1" id=boton1 type="button" onclick="preguntas()" ><p id="Empezar">Empezar</p></button> <!--Botón de esta clase que al clicar sobre el empieza la función-->
+
+<br>
+<h3 id="pregunta"> </h3> <!--En este espacio aparecen las preguntas-->
+<button id=boton2 onClick="preguntas(),eleccion(1)" value="1"><p id="texto1"></p></button> <!--Cada pregunta le da un valor a la variable opción para identificar la respuesta-->
+<br>
+<br>
+<button id=boton3 onClick="preguntas(),eleccion(2)" value="2"><p id="texto2"></p></button>
+<br>
+<br>
+<button id=boton4 onClick="preguntas(),eleccion(3)" value="3"><p id="texto3"></p></button>
+<br>
+<br>
+<b id=respuesta></b>
+<br>
+
+<script>
+
+var pregunta = 0 //Al iniciar la página los valores se ponen a 0
+var opcion = 0
+var puntos = 0
+
+function preguntas() {  
+document.getElementById("boton1").style.visibility = "hidden"; //Desaparece el botón
+pregunta = pregunta+1 //Esta función suma 1 al valor de preguntas para que aparezca la siguiente
+
+if ( pregunta==1 ){ //Según el valor de la pregunta, aparece la pregunta con las respuestas correspondientes y los botones cambian de apariencia
+    document.getElementById("pregunta").innerHTML = "¿Dónde se encuentra Zapdos en Pokemon Rojo/Azul?";
+    document.getElementById("texto1").innerHTML = "Pueblo Paleta";
+    document.getElementById("boton2").style.background='#66ff99';
+    document.getElementById("texto2").innerHTML = "Ciudad Celeste";
+    document.getElementById("boton3").style.background='#6699ff';
+    document.getElementById("texto3").innerHTML = "Central de energía";
+    document.getElementById("boton4").style.background='#e6e6e6';
+}
+  else if (pregunta==2) {
+    document.getElementById("pregunta").innerHTML = "¿Qué tipo es efectivo contra el elemento Agua?";
+    document.getElementById("texto1").innerHTML = "Rayo";
+    document.getElementById("boton2").style.background='#ffff66';
+    document.getElementById("texto2").innerHTML = "Fuego";
+    document.getElementById("boton3").style.background='#ff0000';
+    document.getElementById("texto3").innerHTML = "Agua";
+    document.getElementById("boton4").style.background='#66ffff';
+  }
+  else if (pregunta==3) {
+    document.getElementById("pregunta").innerHTML = "¿Cuál es mi color favorito?";
+    document.getElementById("texto1").innerHTML = "Rosa";
+    document.getElementById("boton2").style.background='#ff0066';
+    document.getElementById("texto2").innerHTML = "Azul";
+    document.getElementById("boton3").style.background='#1a53ff';
+    document.getElementById("texto3").innerHTML = "Púrpura";
+    document.getElementById("boton4").style.background='#ac00e6';
+
+} else if (pregunta==4){ //Para finalizar, los botones se ocultan (no desaparecen por que no es hidden)
+    document.getElementById("pregunta").innerHTML = "¡Has acabado!";
+    document.getElementById("texto1").innerHTML = "";
+    document.getElementById("boton2").style.opacity = "0";
+    document.getElementById("texto2").innerHTML = "";
+    document.getElementById("boton3").style.opacity = "0";
+    document.getElementById("texto3").innerHTML = ""; 
+    document.getElementById("boton4").style.opacity = "0";
+
+}
+}
+
+function eleccion(opcion){ //La suma de puntos según la respuesta, si es correcta suma 1 a puntuación, si no no hace nada
+  if (pregunta==2)
+    if (opcion==3) 
+      puntos =puntos+1;       
+     else 
+      ;
+      else if (pregunta==3) 
+        if (opcion==1)
+        puntos=puntos+1;
+        else 
+          ;
+         else if (pregunta==4)
+        if (opcion==2){
+        puntos=puntos+1
+} document.getElementById("respuesta").innerHTML = "Has acertado "+puntos+" pregunta(s)"; //Despues de iniciar esta función (empieza al elegir las opciones porque es la variable que controla) aparece en pantalla indicando la puntuación conseguida.
+}   
+</script>
+</body>
+</html>
