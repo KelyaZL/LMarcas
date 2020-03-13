@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <button type="button" class="btn">Basic</button><!--Para hacer el boton y se puede poner color o formato de link-->
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-dark">Dark</button>
+  <button type="button" class="btn btn-light">Light</button>
+  <button type="button" class="btn btn-link">Link</button> 
+  <button type="button" class="btn btn-outline-secondary">Secondary</button> <!--Para que solo salga coloreado el contorno del botón y el relleno en blanco-->
+</div>
+<br>
+
+<!--Tamaño del botón-->
+<div class="container">
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+<button type="button" class="btn btn-primary btn-block">Full-Width Button</button> <!--Coge el ancho de la pantalla-->
+</div>
+<br>
+
+<!--Usabilidad-->
+<div class="container">
+<button type="button" class="btn btn-primary active">Active Primary</button> <!--Botón utilizable-->
+<button type="button" class="btn btn-primary" disabled>Disabled Primary</button><!--Botón deshabilitado-->
+</div>
+<br>
+
+<!--Botones de carga-->
+<div class="container">
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+    </button>
+  
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+    
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-border spinner-border-sm"></span>
+      Loading..
+    </button>
+    
+    <button class="btn btn-primary" disabled>
+      <span class="spinner-grow spinner-grow-sm"></span>
+      Loading..
+    </button>
+</div>
+  
+
+
+</body>
+</html>

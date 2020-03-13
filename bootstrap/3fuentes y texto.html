@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--Personalizar los tamaños de los h1 de html-->
+<div class="container">
+  <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+  <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+  <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+  <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+  <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+  <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+</div>
+<br>
+
+<!--Titulos que resaltan ya que son más grandes y llamativos-->
+<div class="container">
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+</div>
+<br>
+
+<!--Small dentro de h1 para que el texto sea más claro y aparezca como subtitulo, aclara un 80% el del padre-->
+<div class="container">
+    <h1>h1 heading <small>secondary text</small></h1>
+    <h2>h2 heading <small>secondary text</small></h2>
+    <h3>h3 heading <small>secondary text</small></h3>
+    <h4>h4 heading <small>secondary text</small></h4>
+    <h5>h5 heading <small>secondary text</small></h5>
+    <h6>h6 heading <small>secondary text</small></h6>
+</div>
+<br>
+
+<!--Mark para que el texto salga resaltado-->
+<div class="container">   
+    <p>Use the mark element to <mark>highlight</mark> text.</p>
+</div>
+<br>
+
+<!--Abbr para abreviaciones, al pasar el ratón por encima muestra otro texto-->
+<div class="container">
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</div>
+<br>
+
+<!--Blockquote para citar contenido de otra fuente Footer es la parte del pie donde se pone la fuente-->
+<div class="container">
+<blockquote class="blockquote">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer class="blockquote-footer">From WWF's website</footer>
+</blockquote>
+</div>
+<br>
+
+<!--d1 para crear la estructura de esquema y dt para el titulo y dd para el contenido-->
+<div class="container">
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>     
+</div>
+<br>
+
+<!--Para que no salgan en vertical y con viñeta-->
+<div class="container">
+    <h2>Typography</h2>
+    <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+    <ul class="list-inline">
+      <li class="list-inline-item">Coffee</li>
+      <li class="list-inline-item">Tea</li>
+      <li class="list-inline-item">Milk</li>
+    </ul>
+</div>
+<br>
+
+<!--Code para remarcar -->
+<div class="container">
+    <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+</div>
+<br>
+
+<!--Kbd pone como teclas(en negro) lo que haya escrito-->
+<div class="container">
+    <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+</div>
+<br>
+
+<!--Pre cambia la fuente y respeta los espacios y saltos de línea-->
+<div class="container">
+    <pre>
+    Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks.
+    </pre>
+</div>
+<br>
+
+<!--Distintos tipos de negrita y cursiva-->
+<div class="container">
+    <h1>Font weight and italics</h1>
+    <p class="font-weight-bold">Bold text.</p>
+    <p class="font-weight-bolder">Bolder text.</p>
+    <p class="font-weight-normal">Normal weight text.</p>
+    <p class="font-weight-light">Light weight text.</p>
+    <p class="font-weight-lighter">Lighter weight text.</p>
+    <p class="font-italic">Italic text.</p>
+</div>
+<br>
+
+<!--Texto que destaca-->
+<div class="container">
+    <p class="lead">This paragraph stands out.</p>
+    <p>This is a regular paragraph.</p>
+</div>
+<br>
+
+<!--Alineación del contenido-->
+<div class="container">
+    <p class="text-left">Left-aligned text.</p>
+    <p class="text-right">Right-aligned text.</p>      
+    <p class="text-center">Center-aligned text.</p>
+    <p class="text-justify">Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.</p>      
+    <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+    <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>      
+</div>
+<br>
+
+<!--Alineación según tamaño de ventana (se admite con left center right y justify)-->
+<div class="container">
+    <p>Note that text is left-aligned by default.</p>
+    <p class="text-left">Left aligned text on all screen sizes.</p>
+    <p class="text-sm-left">Left aligned text on small or wider screens.</p>
+    <p class="text-md-left">Left aligned text on medium or wider screens.</p>
+    <p class="text-lg-left">Left aligned text on large or wider screens.</p>
+    <p class="text-xl-left">Left aligned text on xlarge or wider screens.</p>
+</div>
+<br>
+
+<!--Text-break hace que el texto se amolde al tamaño de la pantalla y no se pierda al final de la página-->
+<div class="container">
+    <p class="text-break">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+    <p>Without .text-break:</p>
+    <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+</div>
+<br>
+
+<!--Para que el texto como los links no tengan florituras como el underline por defecto los quita-->
+<div class="container">
+    <a href="#" class="text-decoration-none">A link without underline.</a>
+</div>
+<br>
+
+<!--Para que no herede las caracteristicas del padre-->
+<div class="container">
+    <p class="text-muted">Muted text with a <a href="#" class="text-reset">reset link</a>.</p>
+</div>
+<br>
+
+<!--Topografía-->
+<div class="container">
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>      
+    <p class="text-capitalize">Capitalized text.</p>
+</div>
+<br>
+
+
+
+</body>
+</html>
