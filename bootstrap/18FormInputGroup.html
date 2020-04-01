@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container mt-3">
+  <h1>Input Group Size</h1>
+  <p>Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups:</p>
+  <form>
+    <div class="input-group mb-3 input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Small</span>
+      </div>
+      <input type="text" class="form-control">
+    </div>
+  </form>
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Default</span>
+      </div>
+      <input type="text" class="form-control">
+    </div>
+  </form>
+  <form>
+    <div class="input-group mb-3 input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Large</span>
+      </div>
+      <input type="text" class="form-control">
+    </div>
+  </form>
+</div>
+<br>
+
+
+<div class="container mt-3">
+    <h3>Multiple Inputs and Addons</h3>
+    
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Person</span>
+        </div>
+        <input type="text" class="form-control" placeholder="First Name">
+        <input type="text" class="form-control" placeholder="Last Name">
+      </div>  
+    </form>
+    
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">One</span>
+          <span class="input-group-text">Two</span>
+          <span class="input-group-text">Three</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+</div>
+<br>
+
+
+<div class="container mt-3">
+    <h3>Input Group with Checkboxes and Radios</h3>
+    <p>You can also use checkboxes or radio buttons instead of text:</p>
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox"> 
+          </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+    </form>
+    
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="radio"> 
+          </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+      </div>
+    </form>
+</div>
+<br>
+
+<div class="container mt-3">
+    <h1>Input Group Buttons</h1>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-primary" type="button">Basic Button</button>  
+      </div>
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
+  
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-append">
+        <button class="btn btn-success" type="submit">Go</button>  
+       </div>
+    </div>
+  
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Something clever..">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button">OK</button>  
+        <button class="btn btn-danger" type="button">Cancel</button>  
+       </div>
+    </div>
+</div>
+<br>
+
+
+<div class="container mt-3">
+    <h3>Input Groups with Dropdown Button</h3>
+    <p>Add a dropdown button in the input group. Note that you don't need the .dropdown wrapper, as you normally would.</p>
+    <form>
+      <div class="input-group mt-3 mb-3">
+        <div class="input-group-prepend">
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+            Dropdown button
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+    </form>
+</div>
+<br>  
+
+<div class="container mt-3">
+    <label for="demo">Write your email here:</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+      <div class="input-group-append">
+        <span class="input-group-text">@example.com</span>
+      </div>
+    </div>  
+</div>
+<br>
+
+<div class="container mt-3">
+    <h2>Custom Checkbox</h2>
+    <form action="/action_page.php">
+      <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+        <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+      </div>
+      <input type="checkbox" id="defaultCheck" name="example2">
+      <label for="defaultCheck">Default checkbox</label>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<br>
+
+<div class="container mt-3">
+    <form>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch1">
+          <label class="custom-control-label" for="switch1">Toggle me</label>
+        </div>
+      </form>
+</div>
+<br>
+
+<div class="container mt-3">
+    <form>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+          <label class="custom-control-label" for="customRadio">Custom radio</label>
+        </div>
+      </form>
+</div>
+<br>
+
+<div class="container mt-3">
+  <form>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+      <label class="custom-control-label" for="customRadio">Custom radio 1</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+      <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+    </div>
+  </form>
+</div>
+<br>
+
+
+<div class="container mt-3">
+    <h2>Custom Select Menu</h2>
+    <p>To create a custom select menu, add the .custom-select class to the select element:</p>
+    <form action="/action_page.php">
+      <select name="cars" class="custom-select mb-3">
+        <option selected>Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<br>
+
+<div class="container mt-3">
+    <h2>Custom Select Menu Sizing</h2>
+    <p>Use the .custom-select-sm class to create a small select menu and the .custom-select-lg class for a large one:</p>
+    <form>
+      <select class="custom-select custom-select-sm mb-3">
+        <option selected>Small Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <select name="cars" class="custom-select mb-3">
+        <option selected>Default Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <select name="cars" class="custom-select custom-select-lg mb-3">
+        <option selected>Large Custom Select Menu</option>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+    </form>
+</div>
+<br>
+
+<div class="container mt-3">
+    <h2>Custom Range</h2>
+    <p>To create a custom range menu, add the .custom-range class to the input element with type="range":</p>
+    <form action="/action_page.php">
+      <label for="customRange">Custom range</label>
+      <input type="range" class="custom-range" id="customRange" name="points1">
+      <label for="defaultRange">Default range</label>
+      <input type="range" id="defaultRange" name="points2">
+      <p><button type="submit" class="btn btn-primary">Submit</button></p>
+    </form>
+</div>
+<br>
+
+<div class="container mt-3">
+    <h2>Custom File</h2>
+    <p>To create a custom file upload, wrap a container element with a class of .custom-file around the input with type="file". Then add the .custom-file-input to the file input:</p>
+    <form action="/action_page.php">
+      <p>Custom file:</p>
+      <div class="custom-file mb-3">
+        <input type="file" class="custom-file-input" id="customFile" name="filename">
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
+      
+      <p>Default file:</p>
+      <input type="file" id="myFile" name="filename2">
+    
+      <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+</div>
+  
+  <script>
+  // Add the following code if you want the name of the file appear on select
+  $(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  });
+  </script>
+
+</body>
+</html>
+
